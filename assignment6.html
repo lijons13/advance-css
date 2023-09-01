@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .box{
+       position: relative;
+        border:1px solid black;
+        height:90vh;
+        width:90vw;
+    }
+    img{
+        position: absolute;
+        left:25%;
+        top:25%;
+        width:50%;
+        border:1px solid black;
+        filter:grayscale(1);
+
+    }
+    .head{
+        text-decoration: underline;
+        font-size: 25px;
+        font:bold;
+        text-align: center;
+        margin-top: 8%;
+
+    }
+    .box:hover .section{
+        filter: grayscale(0);
+        transition-property: filter;
+        transition-duration: 1s;
+        transition-delay: .2s;
+        transition-timing-function: ease;
+    }
+   </style> 
+</head>
+<body>
+    <div class="box">
+        <H1 class="head">HOVER TO UNVIEL THE IMAGE</H1>
+        <img src="leaf.jpg" alt="" class="section">
+    </div>
+</body>
+</html>

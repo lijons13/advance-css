@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:90vh;
+            border:1px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        .section{
+            width:50%;
+        }
+        .section:hover{
+            transform: scale(1.5);
+            transition:1s transform;
+            transition-timing-function: ease-in-out;
+            transition-delay: .3s;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="leaf.jpg" alt="" class="section">
+    </div>
+</body>
+</html>
